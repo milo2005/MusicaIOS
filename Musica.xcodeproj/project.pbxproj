@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0EC5D4211C613BF100E0F1A3 /* MusicaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC5D4201C613BF100E0F1A3 /* MusicaTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		0EC5D4231C614E1E00E0F1A3 /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC5D4221C614E1E00E0F1A3 /* DetalleViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		0ECFF73A1C5D5FED009234AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFF7391C5D5FED009234AC /* AppDelegate.swift */; };
 		0ECFF73C1C5D5FED009234AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFF73B1C5D5FED009234AC /* ViewController.swift */; };
 		0ECFF73F1C5D5FED009234AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ECFF73D1C5D5FED009234AC /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		0EC5D4201C613BF100E0F1A3 /* MusicaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicaTableViewCell.swift; sourceTree = "<group>"; };
+		0EC5D4221C614E1E00E0F1A3 /* DetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
 		0ECFF7361C5D5FED009234AC /* Musica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ECFF7391C5D5FED009234AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ECFF73B1C5D5FED009234AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				0ECFF7401C5D5FED009234AC /* Assets.xcassets */,
 				0ECFF7421C5D5FED009234AC /* LaunchScreen.storyboard */,
 				0ECFF7451C5D5FED009234AC /* Info.plist */,
+				0EC5D4221C614E1E00E0F1A3 /* DetalleViewController.swift */,
 			);
 			path = Musica;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ECFF7691C5D6EA4009234AC /* Cancion.swift in Sources */,
+				0EC5D4231C614E1E00E0F1A3 /* DetalleViewController.swift in Sources */,
 				0EC5D4211C613BF100E0F1A3 /* MusicaTableViewCell.swift in Sources */,
 				0ECFF73C1C5D5FED009234AC /* ViewController.swift in Sources */,
 				0ECFF73A1C5D5FED009234AC /* AppDelegate.swift in Sources */,

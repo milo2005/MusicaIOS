@@ -46,8 +46,23 @@ class ViewController: UIViewController,UITableViewDataSource {
         return cell!
         
     }
-
     
+    
+    //MARK: Metodos de navegacios
+
+    @IBAction func restartViewController(segue:UIStoryboardSegue){
+        
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "detalle"{
+            let detalle:DetalleViewController = segue.destinationViewController as! DetalleViewController
+            
+            detalle.info = "Saludos"
+        }
+    }
 
 }
 
