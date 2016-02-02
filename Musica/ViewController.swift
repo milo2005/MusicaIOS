@@ -8,18 +8,43 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITableViewDataSource {
+    
+    var musica:[String]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        musica = ["musica 1","musica 2","musica 3", "musica 4"]
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    //MARK: Metodos del Datasource
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return musica.count
+        
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        var cell:UITableViewCell? = tableView.dequeueReusableCellWithIdentifier("celda")
+        
+        if cell == nil{
+            cell = UITableViewCell(style: .Default, reuseIdentifier: "celda")
+        }
+        
+        cell?.textLabel?.text = musica[indexPath.row]
+        
+        return cell!
+        
     }
 
+    
 
 }
 

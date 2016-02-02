@@ -14,6 +14,7 @@
 		0ECFF7441C5D5FED009234AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ECFF7421C5D5FED009234AC /* LaunchScreen.storyboard */; };
 		0ECFF74F1C5D5FED009234AC /* MusicaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFF74E1C5D5FED009234AC /* MusicaTests.swift */; };
 		0ECFF75A1C5D5FED009234AC /* MusicaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFF7591C5D5FED009234AC /* MusicaUITests.swift */; };
+		0ECFF7691C5D6EA4009234AC /* Cancion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFF7681C5D6EA4009234AC /* Cancion.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0ECFF7551C5D5FED009234AC /* MusicaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ECFF7591C5D5FED009234AC /* MusicaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaUITests.swift; sourceTree = "<group>"; };
 		0ECFF75B1C5D5FED009234AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ECFF7681C5D6EA4009234AC /* Cancion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cancion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		0ECFF7381C5D5FED009234AC /* Musica */ = {
 			isa = PBXGroup;
 			children = (
+				0ECFF7671C5D6E18009234AC /* Models */,
 				0ECFF7391C5D5FED009234AC /* AppDelegate.swift */,
 				0ECFF73B1C5D5FED009234AC /* ViewController.swift */,
 				0ECFF73D1C5D5FED009234AC /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				0ECFF75B1C5D5FED009234AC /* Info.plist */,
 			);
 			path = MusicaUITests;
+			sourceTree = "<group>";
+		};
+		0ECFF7671C5D6E18009234AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0ECFF7681C5D6EA4009234AC /* Cancion.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ECFF7691C5D6EA4009234AC /* Cancion.swift in Sources */,
 				0ECFF73C1C5D5FED009234AC /* ViewController.swift in Sources */,
 				0ECFF73A1C5D5FED009234AC /* AppDelegate.swift in Sources */,
 			);
