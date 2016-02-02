@@ -22,7 +22,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="104" id="Rem-yg-yYH">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cancionCell" rowHeight="104" id="Rem-yg-yYH" customClass="MusicaTableViewCell" customModule="Musica" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="104"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rem-yg-yYH" id="PJa-eS-VMm">
@@ -77,6 +77,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <outlet property="artista" destination="bwO-Rn-jeE" id="Upw-6h-evz"/>
+                                            <outlet property="duracion" destination="8T9-tp-Vmb" id="saS-oh-kjz"/>
+                                            <outlet property="titulo" destination="uKU-39-zQI" id="Cyi-qF-Uac"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

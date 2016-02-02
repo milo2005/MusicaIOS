@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EC5D4211C613BF100E0F1A3 /* MusicaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC5D4201C613BF100E0F1A3 /* MusicaTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		0ECFF73A1C5D5FED009234AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFF7391C5D5FED009234AC /* AppDelegate.swift */; };
 		0ECFF73C1C5D5FED009234AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECFF73B1C5D5FED009234AC /* ViewController.swift */; };
 		0ECFF73F1C5D5FED009234AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ECFF73D1C5D5FED009234AC /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EC5D4201C613BF100E0F1A3 /* MusicaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicaTableViewCell.swift; sourceTree = "<group>"; };
 		0ECFF7361C5D5FED009234AC /* Musica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Musica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ECFF7391C5D5FED009234AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ECFF73B1C5D5FED009234AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EC5D41F1C613B2D00E0F1A3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0EC5D4201C613BF100E0F1A3 /* MusicaTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		0ECFF72D1C5D5FED009234AC = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 		0ECFF7381C5D5FED009234AC /* Musica */ = {
 			isa = PBXGroup;
 			children = (
+				0EC5D41F1C613B2D00E0F1A3 /* Cells */,
 				0ECFF7671C5D6E18009234AC /* Models */,
 				0ECFF7391C5D5FED009234AC /* AppDelegate.swift */,
 				0ECFF73B1C5D5FED009234AC /* ViewController.swift */,
@@ -267,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ECFF7691C5D6EA4009234AC /* Cancion.swift in Sources */,
+				0EC5D4211C613BF100E0F1A3 /* MusicaTableViewCell.swift in Sources */,
 				0ECFF73C1C5D5FED009234AC /* ViewController.swift in Sources */,
 				0ECFF73A1C5D5FED009234AC /* AppDelegate.swift in Sources */,
 			);
@@ -495,6 +507,7 @@
 				0ECFF7601C5D5FED009234AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0ECFF7611C5D5FED009234AC /* Build configuration list for PBXNativeTarget "MusicaTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +516,7 @@
 				0ECFF7631C5D5FED009234AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0ECFF7641C5D5FED009234AC /* Build configuration list for PBXNativeTarget "MusicaUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +525,7 @@
 				0ECFF7661C5D5FED009234AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

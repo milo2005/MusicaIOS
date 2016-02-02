@@ -10,12 +10,17 @@ import UIKit
 
 class ViewController: UIViewController,UITableViewDataSource {
     
-    var musica:[String]!
+    var musica:[Cancion]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        musica = ["musica 1","musica 2","musica 3", "musica 4"]
+        musica = [
+            Cancion(artista: "Poets of the fall", nombre: "Miss Imposible", duracion: "4:00", imagen: ""),
+            Cancion(artista: "Artic Mokeys", nombre: "Do I Wanna Know?", duracion: "3:50", imagen: ""),
+            Cancion(artista: "Black Keys", nombre: "Little Black Submarine", duracion: "4:00", imagen: "")
+        
+        ]
         
     }
 
@@ -32,13 +37,11 @@ class ViewController: UIViewController,UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell:UITableViewCell? = tableView.dequeueReusableCellWithIdentifier("celda")
+        let cell:MusicaTableViewCell! = tableView.dequeueReusableCellWithIdentifier("cancionCell") as! MusicaTableViewCell
         
-        if cell == nil{
-            cell = UITableViewCell(style: .Default, reuseIdentifier: "celda")
-        }
-        
-        cell?.textLabel?.text = musica[indexPath.row]
+        cell.artista.text = musica[indexPath.row].artista
+        cell.titulo.text = musica[indexPath.row].nombre
+        cell.duracion.text = musica[indexPath.row].duracion
         
         return cell!
         
